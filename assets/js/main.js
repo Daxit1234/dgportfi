@@ -7,6 +7,33 @@
 */
 (function() {
   "use strict";
+   document.getElementById("show-pdf").addEventListener("click", function () {
+    document.getElementById("pdf-viewer").classList.remove("hidden");
+    document.getElementById("backdrop").classList.remove("hidden");
+});
+
+document.getElementById("backdrop").addEventListener("click", function () {
+    document.getElementById("pdf-viewer").classList.add("hidden");
+    document.getElementById("backdrop").classList.add("hidden");
+});
+   document.getElementById("show-pdf2").addEventListener("click", function () {
+    document.getElementById("pdf-viewer2").classList.remove("hidden");
+    document.getElementById("backdrop2").classList.remove("hidden");
+});
+
+document.getElementById("backdrop2").addEventListener("click", function () {
+    document.getElementById("pdf-viewer2").classList.add("hidden");
+    document.getElementById("backdrop2").classList.add("hidden");
+});
+   document.getElementById("show-pdf3").addEventListener("click", function () {
+    document.getElementById("pdf-viewer3").classList.remove("hidden");
+    document.getElementById("backdrop3").classList.remove("hidden");
+});
+
+document.getElementById("backdrop3").addEventListener("click", function () {
+    document.getElementById("pdf-viewer3").classList.add("hidden");
+    document.getElementById("backdrop3").classList.add("hidden");
+});
 
   /**
    * Easy selector helper function
